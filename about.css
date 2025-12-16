@@ -1,0 +1,42 @@
+@import url(css.css);
+
+
+#section1{}
+
+#section1-div1,#section1-div2{display: inline-block;width: 45%;vertical-align: middle;}
+
+
+
+
+.skill-category{background-color: transparent;width: 70%;padding: 10px;}
+
+.skill-title{display: inline-block;}
+
+.skill-section{text-align: left;}
+
+
+.skill-name{margin: 0px;font-size: 16px;}
+
+.skill-item{background-color: thistle;
+    width: fit-content;
+    padding-inline: 20px;
+    padding-block: 5px;
+
+    border-radius: 20px;
+    margin:5px;
+    display: inline-block;
+}
+.fa-brands,.fa-solid{
+    font-size: 24px;
+    width:fit-content;
+vertical-align: middle;}
+
+.division{width: 30px;}
+
+#division-line{width: 1px;
+    height: 40px;
+    background-color: black;
+}
+
+
+.break{height: 30px;}

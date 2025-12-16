@@ -1,0 +1,99 @@
+@import url(css.css);
+
+#main-body {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3%;
+
+}
+
+.section1,
+.section2 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.section1 {
+    width: 60%;
+}
+
+form {
+    text-align: left;
+    width: 100%;
+}
+
+label,
+input {
+    font-size: 20px;
+    display: block;
+    padding-block: 5px;
+}
+
+
+
+input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+hr {
+    margin-block: 20px;
+    opacity: 50%;
+    color: gainsboro;
+}
+
+.div-button {
+    text-align: center;
+    width: 80%;
+}
+
+button {
+    background-color: darkorchid;
+    width: 100px;
+    height: 100px;
+    border-radius: 200px;
+    text-align: center;
+}
+
+table {
+    text-align: left;
+}
+
+
+.fa {
+    color: #734F96;
+    font-size: 36px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.contact-text {
+    display: inline-block;
+    vertical-align: middle;
+    color: #231730;
+    text-decoration: none;
+
+}
+
+.div-contact-text {
+    padding: 10px;
+}
+
+h3{text-align: left;padding-top: 0px;margin-top: 0px;}
+
+.social-link{text-align: left;
+    color:#231730;
+    font-size: 18px;
+    text-decoration: none;
+    padding-block: 5px;
+display: block;}
+
+.social-link:hover{text-decoration: underline;
+    transition: ease-in-out 0.15s;
+     font-size: 20px;
+    padding-top:0px;
+    padding-bottom: 5px;
+}
+
+.socials{padding-block: 20px;}

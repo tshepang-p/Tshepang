@@ -1,0 +1,43 @@
+@import url(css.css);
+
+
+#my-work{padding: 5%;}
+.card{background-color: rgba(128, 147, 153, 0.589);
+
+    text-align: left;
+    border-radius: 20px;
+    padding: 20px;
+    margin-block: 20px;
+
+}
+
+   body{background-image:url(media/bg.jpg);
+    background-repeat: no-repeat;
+
+    background-size: cover;
+}
+
+.card-logo{display:inline-block;
+     vertical-align: middle;
+     opacity: 100%;
+    }
+
+.card-heading{margin: 0px;font-size:x-large;}
+
+
+
+.card-about{display: inline-block;
+    padding-inline: 1%;
+    vertical-align: middle;width:85%;}
+
+.description{
+    text-align: justify;
+}
+
+
+.logo2{width: 120px;height: 120px;}
+
+.site{color: #154d5e;
+    text-decoration: none;
+    font-weight: bolder;
+}

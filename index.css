@@ -1,0 +1,46 @@
+@import url(css.css);
+
+
+
+
+
+
+#section-1{padding-inline: 5%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+#section1-1{text-align: center;
+    display: inline-flex;
+    vertical-align: middle;}
+
+
+#section1-2{display: inline-flex;vertical-align: middle;}
+
+
+#my-image{width: 300px;}
+
+
+#intro{font-family: Arial, Helvetica, sans-serif;text-align: left;width:fit-content}
+
+
+
+#name,#surname{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #734F96;
+    font-size: 50px;
+    font-weight: bold;
+
+font-style: normal;
+}
+
+#surname{
+    color: #b8a1ce;
+
+}
+
+
