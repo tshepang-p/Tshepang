@@ -1,12 +1,14 @@
 @import url(css.css);
 
+/* ===== Main Body ===== */
 #main-body {
     display: flex;
     justify-content: space-evenly;
     padding: 3%;
-
+    flex-wrap: wrap; /* allows stacking on smaller screens */
 }
 
+/* Sections */
 .section1,
 .section2 {
     display: inline-block;
@@ -17,6 +19,11 @@
     width: 60%;
 }
 
+.section2 {
+    width: 35%; /* optional, adjust to fit layout */
+}
+
+/* Form */
 form {
     text-align: left;
     width: 100%;
@@ -29,23 +36,24 @@ input {
     padding-block: 5px;
 }
 
-
-
 input {
     border: none;
     background-color: transparent;
     outline: none;
 }
 
+/* Divider */
 hr {
     margin-block: 20px;
     opacity: 50%;
     color: gainsboro;
 }
 
+/* Button */
 .div-button {
     text-align: center;
     width: 80%;
+    margin: auto;
 }
 
 button {
@@ -54,13 +62,26 @@ button {
     height: 100px;
     border-radius: 200px;
     text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
 }
 
+button:hover {
+    transform: scale(1.1);
+}
+
+/* Table */
 table {
     text-align: left;
+    width: 100%;
+    border-collapse: collapse;
 }
 
+table td, table th {
+    padding: 8px;
+}
 
+/* Icons */
 .fa {
     color: #734F96;
     font-size: 36px;
@@ -73,27 +94,95 @@ table {
     vertical-align: middle;
     color: #231730;
     text-decoration: none;
-
 }
 
 .div-contact-text {
     padding: 10px;
 }
 
-h3{text-align: left;padding-top: 0px;margin-top: 0px;}
+h3 {
+    text-align: left;
+    padding-top: 0px;
+    margin-top: 0px;
+}
 
-.social-link{text-align: left;
-    color:#231730;
+/* Social Links */
+.social-link {
+    text-align: left;
+    color: #231730;
     font-size: 18px;
     text-decoration: none;
     padding-block: 5px;
-display: block;}
+    display: block;
+}
 
-.social-link:hover{text-decoration: underline;
+.social-link:hover {
+    text-decoration: underline;
     transition: ease-in-out 0.15s;
-     font-size: 20px;
-    padding-top:0px;
+    font-size: 20px;
+    padding-top: 0px;
     padding-bottom: 5px;
 }
 
-.socials{padding-block: 20px;}
+.socials {
+    padding-block: 20px;
+}
+
+/* ===== Responsive Media Queries ===== */
+@media screen and (max-width: 1024px) {
+    #main-body {
+        flex-direction: column; /* stack sections */
+        align-items: center;
+    }
+
+    .section1,
+    .section2 {
+        width: 90%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .div-button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    label,
+    input {
+        font-size: 18px;
+    }
+
+    .social-link {
+        font-size: 16px;
+    }
+
+    .fa {
+        font-size: 30px;
+    }
+
+    button {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    label,
+    input {
+        font-size: 16px;
+    }
+
+    .social-link {
+        font-size: 14px;
+    }
+
+    .fa {
+        font-size: 24px;
+    }
+
+    button {
+        width: 60px;
+        height: 60px;
+    }
+}

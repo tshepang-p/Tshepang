@@ -1,46 +1,123 @@
 @import url(css.css);
 
+body {
+    background-image: url(media/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
 
-
-
-
-
-#section-1{padding-inline: 5%;
+#section-1 {
+    padding-inline: 5%;
     text-align: center;
     align-items: center;
     display: flex;
     justify-content: space-evenly;
 }
 
-
-
-#section1-1{text-align: center;
+/* Text and image sections */
+#section1-1 {
+    text-align: center;
     display: inline-flex;
-    vertical-align: middle;}
+    vertical-align: middle;
+    flex-direction: column;
+}
 
+#section1-2 {
+    display: inline-flex;
+    vertical-align: middle;
+}
 
-#section1-2{display: inline-flex;vertical-align: middle;}
+/* Image size */
+#my-image {
+    width: 300px;
+    max-width: 90%;
+    height: auto;
+}
 
+/* Intro text */
+#intro {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    width: fit-content;
+}
 
-#my-image{width: 300px;}
-
-
-#intro{font-family: Arial, Helvetica, sans-serif;text-align: left;width:fit-content}
-
-
-
-#name,#surname{
+/* Name and surname */
+#name,
+#surname {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #734F96;
     font-size: 50px;
     font-weight: bold;
-
-font-style: normal;
+    font-style: normal;
 }
 
-#surname{
+#surname {
     color: #b8a1ce;
-
 }
 
+/* Header */
+.header-item-container img#logo {
+    max-width: 150px;
+}
 
+.header-item-container2 a.link {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 1024px) {
+    #section-1 {
+        flex-direction: column;
+    }
+
+    #section1-1, #section1-2 {
+        display: block;
+        text-align: center;
+    }
+
+    #intro {
+        text-align: center;
+    }
+
+    #name, #surname {
+        font-size: 40px;
+    }
+
+    #my-image {
+        width: 250px;
+    }
+
+    .header-item-container2 a.link {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #name, #surname {
+        font-size: 35px;
+    }
+
+    #my-image {
+        width: 200px;
+    }
+
+    .header-item-container2 a.link {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #name, #surname {
+        font-size: 28px;
+    }
+
+    #my-image {
+        width: 150px;
+    }
+}
