@@ -62,11 +62,7 @@ body {
     max-width: 150px;
 }
 
-.header-item-container2 a.link {
-    margin-left: 20px;
-    text-decoration: none;
-    color: black;
-}
+
 
 /* Media Queries for responsiveness */
 @media screen and (max-width: 1024px) {
@@ -91,10 +87,7 @@ body {
         width: 250px;
     }
 
-    .header-item-container2 a.link {
-        margin-left: 10px;
-        font-size: 14px;
-    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -103,13 +96,10 @@ body {
     }
 
     #my-image {
-        width: 200px;
+        width: 100%;
     }
 
-    .header-item-container2 a.link {
-        display: block;
-        margin: 5px 0;
-    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -118,6 +108,6 @@ body {
     }
 
     #my-image {
-        width: 150px;
+        width: 50%;
     }
 }
