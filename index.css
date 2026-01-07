@@ -39,7 +39,7 @@ body {
 #intro {
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
-    width: fit-content;
+    
 }
 
  #intro,#name,p{
@@ -85,9 +85,15 @@ body {
     #section1-1, #section1-2 {
         display: block;
         text-align: center;
+        width:100%;
     }
 
-    #intro,#name{
+
+
+    #intro{text-align:center;}
+
+
+    #intro,#name,p,#intro{
         text-align: center;
         margin: 0px;
     }
