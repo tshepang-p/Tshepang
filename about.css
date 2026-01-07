@@ -3,6 +3,19 @@
 /* Sections */
 #section1 {}
 
+
+#cv{background-color: #b8a1ce;
+    color: black;padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+#cv:hover{background-color: #c8c9e6;}
+
+
+
+
 #section1-div1,
 #section1-div2 {
     display: inline-block;
